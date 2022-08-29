@@ -11,6 +11,12 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
 }
 
 a {
@@ -20,4 +26,36 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+
+nav {
+    grid-area: sidebar;
+    background-color: #1992d4;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.card {
+    background-color: white;
+}
+
+.container {
+    background-color: white;
 }
