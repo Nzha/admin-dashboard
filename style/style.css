@@ -21,6 +21,11 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: 600;
 }
 
 nav {
@@ -44,7 +49,7 @@ ul {
     padding: 0;
 }
 
-ul.menu > li {
+ul.menu > li > a {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -53,7 +58,7 @@ ul.menu > li {
     padding-left: 0.5rem;
 }
 
-li > img {
+li > a > img {
     width: 28px;
 }
 
