@@ -31,9 +31,30 @@ nav {
     padding: 2rem;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
 ul {
     list-style: none;
     padding: 0;
+}
+
+ul.menu > li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+li > img {
+    width: 28px;
 }
 
 header {
