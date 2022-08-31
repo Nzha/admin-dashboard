@@ -69,7 +69,8 @@ header {
     background-color: white;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
     display: flex;
     justify-content: space-between;;
 }
@@ -114,15 +115,39 @@ input:focus {
     font-weight: 500;
 }
 
-img.avatar {
-    width: 50px;
+.header-top-right img.avatar {
+    width: 3.25rem;
+}
+
+.header-bottom-left img.avatar {
+    width: 5rem;
 }
 
 .header-bottom {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.header-bottom-left {
+    display: flex;
     align-items: center;
+    flex: 1;
     gap: 1rem;
+}
+
+.header-bottom-left p {
+    font-weight: 500;
+    margin: 0;
+}
+
+.header-bottom-left p:nth-child(2) {
+    font-size: 1.6rem;
+}
+
+.header-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .main-content {
