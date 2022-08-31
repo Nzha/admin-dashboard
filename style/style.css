@@ -159,6 +159,11 @@ button {
     border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: #91cdff;
 }
 
 .main-content {
