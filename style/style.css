@@ -58,21 +58,64 @@ ul.menu > li > a {
     padding-left: 0.5rem;
 }
 
-li > a > img {
+li > a > img,
+.header-top-left > img {
     width: 28px;
 }
 
 header {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     grid-area: header;
     background-color: white;
 }
 
 .header-top {
-    display: grid;
-    grid-template-columns: auto 3fr auto auto auto;
+    display: flex;
+    justify-content: space-between;;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+}
+
+input {
+    appearance: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #e2e8f0;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid lightgray;
+}
+
+#search {
+    width: 100%;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 2rem;
+}
+
+.header-top-right .user {
+    display: flex;
     align-items: center;
     gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+img.avatar {
+    width: 50px;
 }
 
 .header-bottom {
