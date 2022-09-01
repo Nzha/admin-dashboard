@@ -68,6 +68,7 @@ header {
     padding: 1rem 4rem;
     grid-area: header;
     background-color: white;
+    box-shadow: 0 10px 10px -10px #C0C0C0;
 }
 
 .header-top,
