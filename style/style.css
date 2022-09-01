@@ -169,6 +169,7 @@ button:hover {
 }
 
 .main-content {
+    color: #696969;
     padding: 1rem 2rem;
     grid-area: main;
     display: grid;
@@ -178,6 +179,7 @@ button:hover {
 
 .main-content h2 {
     font-weight: 500;
+    color: black;
 }
 
 .projects {
@@ -203,12 +205,12 @@ h2 {
 .container {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 10px 10px -10px #C0C0C0;
 }
 
 .card {
     height: 250px;
     display: flex;
-    box-shadow: 0 10px 10px -10px #C0C0C0;
 }
 
 .card-left-border {
@@ -223,7 +225,10 @@ h2 {
     position: relative;
 }
 
-.card-content .title {
+.card-content .title,
+.announcements .title,
+.twitter-handle  {
+    color: black;
     font-weight: 700;
 }
 
@@ -237,5 +242,16 @@ h2 {
 }
 
 .container {
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
+}
+
+.container.announcements {
+    font-size: 0.9rem;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
