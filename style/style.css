@@ -59,7 +59,8 @@ ul.menu > li > a {
 }
 
 li > a > img,
-.header-top-left > img {
+.header-top-left > img,
+.card-icons img {
     width: 28px;
 }
 
@@ -213,10 +214,20 @@ button:hover {
 
 .card-content {
     padding: 1rem 2rem;
+    position: relative;
 }
 
 .card-content .title {
     font-weight: 700;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 .container {
