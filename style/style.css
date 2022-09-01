@@ -245,6 +245,7 @@ h2 {
 .container.announcements {
     font-size: 0.9rem;
     padding: 1rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .announcements hr {
